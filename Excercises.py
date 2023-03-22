@@ -23,13 +23,13 @@ print("cube is more than 1000==>",cube)
 
 #Exercise-2===>get prime numbers up to 1000
 for num in range(1,1001):
-    for i in range(2,(num+1)):
+    for i in range(2,(num)):
         if num%i==0:
            # print("This is not a prime number==>",num)
             break
         else:
             print("This is a prime number==>",num)
-            break
+           # break
         
 #Exercise-3==>users input for their age, if they are younger than 18->kids
 #if they are 18 to 65->adults ELSE print seniors
@@ -37,7 +37,7 @@ for num in range(1,1001):
 age=int(input("what is your age? "))
 if age< 18:
     print("you are kid")
-elif age>18 and age<65:
+elif age>18 or age<65:
     print("you are adult")
 else:
     print("you are senior")
